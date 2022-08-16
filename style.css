@@ -1,0 +1,53 @@
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul li:first-child {
+    position: relative;
+}
+
+nav ul li:first-child:hover .dropdown {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+}
+
+.mega-menu {
+    width: 900px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+
+}
+
+.title-head {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.middle-menu,
+.right-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cloth-access,
+.icon-shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
